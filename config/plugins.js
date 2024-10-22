@@ -3,7 +3,7 @@ module.exports = () => ({
         config: {
         register: {
             // put the name of your added fields here
-            allowedFields: ["firstName", "firstName", "phone"],
+            allowedFields: ["firstName", "lastName", "phone"],
         },
         },
     }
