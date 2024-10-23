@@ -37,6 +37,17 @@
     },
     "seo_description": {
       "type": "text"
+    },
+    "mobile_image": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "excerpt": {
+      "type": "text"
     }
   }
 }

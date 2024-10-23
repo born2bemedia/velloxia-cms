@@ -47,6 +47,8 @@ export interface ApiPostPost extends Struct.CollectionTypeSchema {
     slug: Schema.Attribute.UID<'title'>;
     seo_title: Schema.Attribute.String;
     seo_description: Schema.Attribute.Text;
+    mobile_image: Schema.Attribute.Media<'images' | 'files'>;
+    excerpt: Schema.Attribute.Text;
     createdAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     publishedAt: Schema.Attribute.DateTime;
