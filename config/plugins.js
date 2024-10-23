@@ -11,7 +11,7 @@ module.exports = () => ({
     provider: "local",
     providerOptions: {
       sizeLimit: 1000000, // Adjust this limit if needed (in bytes)
-      path: "/var/data", // Use the mount path from Render
+      path: "/var/data/uploads", // Use the mount path from Render
     },
   },
 });
