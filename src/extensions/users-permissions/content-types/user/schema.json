@@ -79,6 +79,21 @@
       "relation": "oneToMany",
       "target": "api::order.order",
       "mappedBy": "users_permissions_user"
+    },
+    "addressLine1": {
+      "type": "text"
+    },
+    "addressLine2": {
+      "type": "text"
+    },
+    "city": {
+      "type": "string"
+    },
+    "zip": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
     }
   }
 }

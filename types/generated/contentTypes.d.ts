@@ -482,6 +482,11 @@ export interface PluginUsersPermissionsUser
     lastName: Schema.Attribute.String;
     phone: Schema.Attribute.String;
     orders: Schema.Attribute.Relation<'oneToMany', 'api::order.order'>;
+    addressLine1: Schema.Attribute.Text;
+    addressLine2: Schema.Attribute.Text;
+    city: Schema.Attribute.String;
+    zip: Schema.Attribute.String;
+    country: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     publishedAt: Schema.Attribute.DateTime;
