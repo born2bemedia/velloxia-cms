@@ -509,6 +509,7 @@ export interface ApiOrderOrder extends Struct.CollectionTypeSchema {
     singularName: 'order';
     pluralName: 'orders';
     displayName: 'Order';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -525,6 +526,10 @@ export interface ApiOrderOrder extends Struct.CollectionTypeSchema {
     >;
     products: Schema.Attribute.Relation<'oneToMany', 'api::product.product'>;
     invoice: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    files: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
     createdAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     publishedAt: Schema.Attribute.DateTime;
