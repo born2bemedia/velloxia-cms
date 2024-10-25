@@ -12,12 +12,15 @@ module.exports = ({ env }) => ({
       provider: "nodemailer",
       providerOptions: {
         host: env("SMTP_HOST", "smtp.gmail.com"),
-        port: env("SMTP_PORT", 587),
+        port: env.int("SMTP_PORT", 587), // Ensure the port is an integer
         auth: {
           user: env("SMTP_USERNAME"),
           pass: env("SMTP_PASSWORD"),
         },
-        secure: env("SMTP_SECURE", false),
+        secure: env.bool("SMTP_SECURE", false), // Parse the secure option as a boolean
+        tls: {
+          rejectUnauthorized: false, // Disable strict SSL checking
+        },
       },
       settings: {
         defaultFrom: "noreply@velloxia.com",
