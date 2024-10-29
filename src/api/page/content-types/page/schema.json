@@ -4,7 +4,8 @@
   "info": {
     "singularName": "page",
     "pluralName": "pages",
-    "displayName": "Page"
+    "displayName": "Page",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,14 +20,17 @@
       "type": "uid",
       "targetField": "title"
     },
-    "content": {
-      "type": "richtext"
-    },
     "seo_title": {
       "type": "string"
     },
     "seo_description": {
       "type": "text"
+    },
+    "Texts": {
+      "type": "dynamiczone",
+      "components": [
+        "textblock.textblock"
+      ]
     }
   }
 }

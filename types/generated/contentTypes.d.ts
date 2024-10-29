@@ -549,6 +549,7 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
     singularName: 'page';
     pluralName: 'pages';
     displayName: 'Page';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -556,9 +557,9 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
   attributes: {
     title: Schema.Attribute.String & Schema.Attribute.Required;
     slug: Schema.Attribute.UID<'title'>;
-    content: Schema.Attribute.RichText;
     seo_title: Schema.Attribute.String;
     seo_description: Schema.Attribute.Text;
+    Texts: Schema.Attribute.DynamicZone<['textblock.textblock']>;
     createdAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     publishedAt: Schema.Attribute.DateTime;
