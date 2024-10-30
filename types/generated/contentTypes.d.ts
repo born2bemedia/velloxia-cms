@@ -559,7 +559,8 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
     slug: Schema.Attribute.UID<'title'>;
     seo_title: Schema.Attribute.String;
     seo_description: Schema.Attribute.Text;
-    Texts: Schema.Attribute.DynamicZone<['textblock.textblock']>;
+    content: Schema.Attribute.RichText;
+    date: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     publishedAt: Schema.Attribute.DateTime;

@@ -26,11 +26,11 @@
     "seo_description": {
       "type": "text"
     },
-    "Texts": {
-      "type": "dynamiczone",
-      "components": [
-        "textblock.textblock"
-      ]
+    "content": {
+      "type": "richtext"
+    },
+    "date": {
+      "type": "string"
     }
   }
 }
